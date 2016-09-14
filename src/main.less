@@ -1,0 +1,42 @@
+@import (inline) "node_modules/sweetalert/dist/sweetalert.css";
+
+.book-creator-wrapper {
+  @import "node_modules/bootstrap/less/bootstrap";
+  @import (inline) "node_modules/nprogress/nprogress.css";
+  @import (inline) "node_modules/tinymce/skins/lightgray/content.inline.min.css";
+  @import (inline) "node_modules/tinymce/skins/lightgray/content.min.css";
+
+  //@import (inline) "node_modules/quill/dist/quill.base.css";
+  //@import (inline) "node_modules/quill/dist/quill.snow.css";
+  @import "application/styles";
+  @import "header/styles";
+  @import "index/styles";
+  @import "editor/styles";
+  @import "editor/tinymce";
+  @import "parser/styles";
+  @import "help/styles";
+  @import "chapter/styles";
+
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  .application__content {
+    padding-top: 50px;
+  }
+}
+
+.on-show-wrapper {
+  overflow: hidden;
+  .book-creator-wrapper {
+    display: block;
+  }
+}
+
+.book-creator-wrapper {
+  display: none;
+}

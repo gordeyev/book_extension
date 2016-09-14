@@ -1,0 +1,152 @@
+.my-editor {
+  width: calc(~'100% - 200px');
+  margin: 0 auto;
+  height: auto;
+  min-height: calc(~'100vh - 80px');
+  border-left: 4px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 5px 20px;
+  &:focus {
+    border-left: 4px solid #99f;
+    outline: none;
+  }
+}
+
+.html-fragment {
+  position: fixed;
+  z-index: 1500;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mce-btn-group:last-child {
+  float:right;
+  border-left: none;
+}
+
+.save-modal-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  .save-modal {
+    width: 500px;
+    background: #fff;
+    min-height: 400px;
+    padding: 20px;
+    overflow: hidden;
+    max-height: calc(~'100vh - 40px');
+  }
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.structure {
+  height: calc(~'100vh - 160px');
+  overflow: scroll;
+  padding-bottom: 10px;
+}
+
+.selected-node {
+  color: darkslateblue !important;
+  font-weight: 700;
+}
+
+.images-view {
+  position: fixed;
+  z-index: 3000;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+.image-wrapper {
+  padding-top: 10px;
+  overflow: scroll;
+  width: calc(~'100% - 30px');
+  height: calc(~'100vh - 50px');
+  margin: 0 15px;
+  line-height: 264px;
+  img {
+    float: left;
+    display: inline-block;
+    height: 250px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    &.not-server {
+      outline: 2px solid red;
+    }
+  }
+  .image-separator {
+    display: inline-block;
+    float: left;
+    height: 264px;
+    width: auto;
+    padding-left: 10px;
+  }
+}
+
+.button-for-images {
+  cursor: pointer;
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  width: 50px;
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: #2b669a;
+  border-radius: 25px;
+  font-size: 22px;
+}
+
+.select-form {
+  position: fixed;
+  z-index: 3000;
+}
+
+.source-code {
+  position: fixed;
+  z-index: 2000;
+  width: calc(~'100vw - 160px');
+  height: calc(~'100vh - 160px');
+  left: 80px;
+  top: 80px;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.41);
+
+  .code-wrapper {
+    height: calc(~'100% - 50px');
+    .code {
+      display: block;
+      border: 1px solid #ccc;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      white-space: pre;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .buttons {
+    padding: 10px 0;
+    width: 100%;
+    height: 50px;
+  }
+}

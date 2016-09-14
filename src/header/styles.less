@@ -1,0 +1,44 @@
+.header {
+  &.navbar {
+    min-height: 30px;
+  }
+  .navbar-brand {
+    height: @navbar-height + 1;
+    margin-bottom: -1px;
+    font-weight: 500;
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: @brand-primary;
+      color: white;
+    }
+
+    span {
+      font-weight: 200;
+    }
+  }
+
+  .navbar-nav > li > a {
+    &,
+    &:hover,
+    &:focus {
+      padding-top: @navbar-padding-vertical - 10px;
+      padding-bottom: @navbar-padding-vertical - 10px;
+    }
+  }
+
+  .navbar-nav > .active > a {
+    &,
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: @brand-primary;
+      border-bottom: 3px solid @brand-primary;
+      margin-bottom: -1px;
+      padding-top: @navbar-padding-vertical - 10px;
+      padding-bottom: @navbar-padding-vertical - 12px;
+    }
+  }
+}
