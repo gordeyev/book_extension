@@ -2,14 +2,6 @@
   "manifest_version": 2,
   "name": "BookCreator",
   "version": "0.0.1",
-//  "browser_action": {
-//    "default_icon": {
-//      "19": "img/icon19.png",
-//      "38": "img/icon38.png"
-//    },
-//    "default_title": "Make book test",
-//    "default_popup": "popup.html"
-//  },
   "browser_action": {
     "default_title": "Show book creator"
   },
@@ -28,7 +20,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["*://*.prosv.ru/*"],
+      "matches": ["*://*.forumlocal.ru/*"],
       "css": ["css/bundle.css"],
       "js": ["js/bundle.js", "js/tinymce/tinymce.js", "js/tinymce/theme.js", "js/tinymce/paste.js"]
     }

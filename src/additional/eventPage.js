@@ -1,5 +1,5 @@
-var prosvetUrl = 's2.msk.prosv.ru/main';
-var booksViewerUrl = 'ebook.msk.prosv.ru';
+var prosvetUrl = 'forumlocal.ru';
+var booksViewerUrl = 'ya.ru';
 
 
 function sendMessage(tabId, message) {
