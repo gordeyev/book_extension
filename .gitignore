@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+node_modules/
+npm-debug.log
+extension/*.html
+extension/css/bundle.css
+extension/js/*.js.map
+extension/js/*.js
